@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>QR-Text</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	
+	<script>
+
+		function criar () {
+			var conteudo = document.getElementById("conteudo").value
+		
+		document.write("<img src='https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl="+conteudo+"&choe=UTF-8' style='border-style:solid; border-color:black;'>")
+
+		}
+		
+		
+
+	</script>
+
+</head>
+<body>
+
+	<div id="div1">
+		QR-Text
+	</div>
+
+	<div id="div2">
+		<p id="paragrafo2">Use esta ferramenta para produzir códigos QR contendo texto<br>
+		Códigos QR podem ser interpretados por leitores por meio do seu aparelho celular</p>
+	</div>
+
+	<div id="div3">
+	Digite o conteúdo a ser colocado no QR Code: <br> <br>
+	<textarea id="conteudo" placeholder="Digite aqui"></textarea>  <br>
+	<button onclick="criar()">Criar</button> <br> <br> <br> 
+	</div>
+
+</body>
+</html>
